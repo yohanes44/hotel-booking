@@ -45,5 +45,27 @@
             padding: 10px;
             cursor: pointer;
         }
+
+        .headerSearch{
+            height: 30px;
+            background-color: white;
+            border: 3px solid #fabb02;
+            display: flex;  
+            align-items: center; 
+            justify-content: space-around   ;
+            padding: 10px 0px;
+            border-radius: 5px;
+
+            // width: 100%;
+            // min-width: 1024px;
+            // padding: 10px;
+
+            .headerSearchItem{
+                // color: black;
+                .headerIcon{
+                    color: lightgray;
+                } 
+            }
+        }
     }
 }

@@ -1,4 +1,4 @@
-import { faBed, faCar, faPlane, faTaxi } from '@fortawesome/free-solid-svg-icons'
+import { faBed, faCalendarDays, faCar, faPerson, faPlane, faTaxi } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 
@@ -37,6 +37,21 @@ export default function Header() {
             Get rewarded for your travels - unlock instant savings of 10% or 
         </p>
         <button className="headerButton">Sign in/ Register</button>
+        <div className="headerSearch">
+            <div className="headerSearchIcon">
+                <FontAwesomeIcon icon={faBed}  className="headerIcon"/>
+                <input type="text" placeholder='Where are you going?' className='headerSearchInput' />
+            </div>
+            <div className="headerSearchIcon">
+                <FontAwesomeIcon icon={faCalendarDays}  className="headerIcon"/>
+                 <span className='headerSearchText'>date to date</span>
+            </div>
+            <div className="headerSearchIcon">
+                <FontAwesomeIcon icon={faPerson}  className="headerIcon"/>
+                <span className='headerSearchText'>2 adults 2 children 1 room</span>
+             </div>
+        </div>
+       
        </div>  
         
     </div>
