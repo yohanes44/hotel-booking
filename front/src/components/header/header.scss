@@ -5,13 +5,14 @@
     color: white;
     display: flex;  
     justify-content: center;
-    
+    position: relative;
+    // border: 2px solid red;
     
     .headerContainer{
         width: 100%;
         max-width: 1024px;
         margin: 20px 0px 100px 0px;
-
+        // border: 2px solid green;
 
         .headerList{
             display: flex;
@@ -55,16 +56,87 @@
             justify-content: space-around   ;
             padding: 10px 0px;
             border-radius: 5px;
-
+            position: absolute;
+            bottom: -25px;
+            width: 100%;
+            max-width: 1024px;
             // width: 100%;
             // min-width: 1024px;
             // padding: 10px;
 
             .headerSearchItem{
                 // color: black;
-                .headerIcon{
-                    color: lightgray;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                position: relative;
+
+
+                .headerSearchInput{
+                    
+                    border: none;
+                    outline: none;
                 } 
+
+                .headerIcon{
+                    color: lightgray;    
+                }
+
+                .headerSearchText{
+                    color: lightgray;
+                    cursor: pointer;
+                }
+
+                .date{
+                    position: absolute;
+                    top:33px;
+                }
+
+                .options{
+                    
+                        position: absolute;
+                        top: 35px;
+                        background-color: white;
+                        color: gray;
+                        border-radius: 5px;
+                        --webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0,0,0.47);
+                        box-shadow: 2px 4px 10px 1px rgba(201,201,201, 0.47);
+                        // border: 1px solid red;
+                        
+                    .optionItem{
+                        width: 200px;
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 10px;   
+
+                        .optionCounter{
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            font-size: 12px;
+                            color: black;
+
+                            .counterButton{
+                                width: 30px;
+                                height: 30px;
+                                border: 1px solid #0071c2;
+                                cursor: pointer;
+                                background-color: white;
+                            }
+                        }
+                        // span{
+                        //     color: #003580;
+                        // }
+                            
+                        // .optionItem{    
+                        //     display: flex;
+                        //     justify-content: space-between;
+                        //     margin: 10px;
+                        // }
+                    }
+                }
+
+
             }
         }
     }
