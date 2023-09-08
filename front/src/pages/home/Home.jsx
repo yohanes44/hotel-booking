@@ -3,7 +3,7 @@ import Header from "../../components/header/Header";
 import Navbar from "../../components/navbar/Navbar";
 
 import "./home.scss";
-import "../../theme.scss";
+
 
 import Featured from "../../components/featured/Featured";
 import PropertyList from "../../components/propertyList/PropertyList";
@@ -11,17 +11,11 @@ import FeaturedProperties from "../../components/featuredProperties/FeaturedProp
 import MailList from "../../components/mailList/MailList";
 import Footer from "../../components/footer/Footer";
 
-export const ThemeContext = createContext({
-  theme: null,
-  themeSwitcher: null,
-});
 
 export default function Home() {
-  const [theme, setTheme] = useState("blue");
 
   return (
-    <ThemeContext.Provider value={{ theme, setTheme }}>
-      <div className={theme}>
+      <div>
         <Navbar />
         <Header type="home" />
         <div className="homeContainer">
@@ -34,6 +28,5 @@ export default function Home() {
           <Footer /> 
         </div>
       </div>
-    </ThemeContext.Provider>
   );
 }

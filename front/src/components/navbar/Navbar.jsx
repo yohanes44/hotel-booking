@@ -1,6 +1,6 @@
 import React,{useContext} from "react";
 
-import { ThemeContext } from "../../pages/home/Home";
+import { ThemeContext } from "../../App"
 
 import "./navbar.scss";
 
