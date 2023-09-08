@@ -1,7 +1,7 @@
 
 .navbar{
     height: 50px;
-    background-color: #003580;
+    background-color: var(--navbar-backgroundColor);
     display: flex;
     justify-content: center;
 
@@ -9,7 +9,7 @@
         width: 100%;
         max-width: 1024px;
         // background-color: red;
-        color: white;
+        color: var(--navbar-navContainer-color);
 
         display: flex;
         align-items: center;
@@ -20,13 +20,22 @@
         }
 
         .navItems{
-
+            display: flex;
+          
             .navButton{
                 margin-left: 20px;
                 bottom: none;
                 padding: 5px 10px;
                 cursor: pointer;
-                color:#003580   
+                color: var(--navbar-navButton-color);
+                border: none;
+                // border-radius: 5px;  
+                
+                &.theme{
+                    background-color: var(--themeChange);
+                    width: 30px;
+                }
+
             }
         }
     }

@@ -9,7 +9,12 @@ import Home from "./pages/home/Home";
 import List from "./pages/List/List";
 import Single from "./pages/single/Single";
 
+import "./app.scss"
+
 function App() {
+
+
+  
   return <div>
 
     <BrowserRouter>

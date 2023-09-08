@@ -1,11 +1,13 @@
 
 
 .header{
-    background: #003580;
-    color: white;
+    background: var(--header-backgroundColor);
+    color: var(--header-color);
     display: flex;  
     justify-content: center;
     position: relative;
+    // width: 100%;
+    // overflow-y: scroll;
     // border: 2px solid red;
     
     .headerContainer{
@@ -14,20 +16,25 @@
         margin: 20px 0px 100px 0px;
         // border: 2px solid green;
 
+        &.listMode{
+            margin: 20px 0px 0px 0px;     
+        }
+
         .headerList{
             display: flex;
             gap: 40px;
             margin-bottom: 50px;
+            flex-wrap: wrap;
             .headerListItem{
                 display: flex;
                 align-items: center;
                 gap: 10px;
 
                 &.active{
-                    border: 1px solid white;
+                    border: var(--header-active-ListItem-border);
                     padding: 10px;
                     border-radius: 20px;
-                }
+                   }
             }
         
         
@@ -39,8 +46,8 @@
         }
 
         .headerButton{
-            background-color: #0071c3;
-            color: white;
+            background-color: var(--header-button-backgroundColor);
+            color: var(--header-button-color);
             font-weight: 500;
             border: none;
             padding: 10px;
@@ -49,8 +56,8 @@
 
         .headerSearch{
             height: 30px;
-            background-color: white;
-            border: 3px solid #fabb02;
+            background-color: var(--header-headerSearch-backgroundColor);
+            border: var(--header-headerSearch-border);
             display: flex;  
             align-items: center; 
             justify-content: space-around   ;
@@ -79,25 +86,28 @@
                 } 
 
                 .headerIcon{
-                    color: lightgray;    
+                    color: var(--header-headerIcon-color);    
                 }
 
                 .headerSearchText{
-                    color: lightgray;
+                    color: var(--header-headerSearchText-color);
                     cursor: pointer;
                 }
 
                 .date{
                     position: absolute;
                     top:33px;
+                    width: fit-content;
+                    z-index: 2;
                 }
 
                 .options{
-                    
+
+                        z-index: 2;
                         position: absolute;
                         top: 35px;
-                        background-color: white;
-                        color: gray;
+                        background-color: var(--header-options-background-color);
+                        color: var(--header-options-color);
                         border-radius: 5px;
                         --webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0,0,0.47);
                         box-shadow: 2px 4px 10px 1px rgba(201,201,201, 0.47);
@@ -114,14 +124,14 @@
                             align-items: center;
                             gap: 10px;
                             font-size: 12px;
-                            color: black;
+                            color: var(--header-optionCounter-color);
 
                             .counterButton{
                                 width: 30px;
                                 height: 30px;
-                                border: 1px solid #0071c2;
+                                border: var(--header-counterButton-border);
                                 cursor: pointer;
-                                background-color: white;
+                                background-color: var(--header-counterButton-backgroundColor);
                             }
                         }
                         // span{
@@ -140,4 +150,6 @@
             }
         }
     }
+
+    
 }
