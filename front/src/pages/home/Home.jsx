@@ -9,6 +9,7 @@ import Featured from "../../components/featured/Featured";
 import PropertyList from "../../components/propertyList/PropertyList";
 import FeaturedProperties from "../../components/featuredProperties/FeaturedProperties";
 import MailList from "../../components/mailList/MailList";
+import Footer from "../../components/footer/Footer";
 
 export const ThemeContext = createContext({
   theme: null,
@@ -16,7 +17,7 @@ export const ThemeContext = createContext({
 });
 
 export default function Home() {
-  const [theme, setTheme] = useState("white");
+  const [theme, setTheme] = useState("blue");
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
@@ -30,6 +31,7 @@ export default function Home() {
           <h1 className="homeTitle">Browse by propery type</h1>
           <FeaturedProperties />
           <MailList />
+          <Footer /> 
         </div>
       </div>
     </ThemeContext.Provider>

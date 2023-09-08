@@ -3,8 +3,8 @@
 .mail{
     width: 100%;
     margin-top: 50px; 
-    background-color: var(--mailList-mail-bgColor, #003580);
-    color: var(--mailList-mail-color, white);
+    background-color: var(--mailList-mail-bgColor);
+    color: var(--mailList-mail-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,8 +23,8 @@
     
     .mailInputContainer>button{
         height: 50px;
-        background-color: var(--mailList-mailInputContainer-bgC, #0071c2);
-        color: var(--mailList-mailInputContainer-color, white);
+        background-color: var(--mailList-mailInputContainer-button-bgC);
+        color: var(--mailList-mailInputContainer-button-color);
         font-weight: 500;
         border: none;
         border-radius: 5px;

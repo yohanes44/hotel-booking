@@ -31,8 +31,8 @@
         }
 
         .fpRating>button{
-            background-color: var(--featuredProperties-button-bgColor, #003580);
-            color: var(--featuredProperties-button-csolor,white);
+            background-color: var(--featuredProperties-button-bgColor);
+            color: var(--featuredProperties-button-color);
             border: none;
             padding: 3px;
             margin-right: 10px;
@@ -41,6 +41,7 @@
         
         .fpRating>span{
             font-size: 14px;
+
         }
         
     }

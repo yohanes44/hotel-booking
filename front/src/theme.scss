@@ -2,38 +2,55 @@
     font-family: 'Roboto', sans-serif;
 }
 
+
+
+
+
 .blue{
 
     --themeChange: #fabb02;
+
 
     --navbar-backgroundColor: #003580;
     --navbar-navContainer-color: white;
     --navbar-navButton-color: #003580;
     
-    
+   
     
     --header-backgroundColor: #003580;
     --header-color: white;
     --header-active-ListItem-border: 1px solid white;
     --header-button-backgroundColor: #0071c3;
-    --header-button-color: white;
-    
-    
+    --header-button-color: white;    
     --header-headerSearch-backgroundColor: white;
     --header-headerSearch-border: 3px solid #fabb02;
-    
     --header-headerIcon-color: lightgray;
     --header-headerSearchText-color: lightgray;
-
     --header-options-background-color: white;
     --header-options-color: gray;
-
     --header-optionCounter-color: black;
     --header-counterButton-border: "1px solid #0071c2";
     --header-counterButton-backgroundColor: white;
 
 
+
+    --featured-featuredItem-color: white;
+
+    
+    --featuredProperties-button-bgColor: #003580;
+    --featuredProperties-button-color: white;
+
+
+    --mailList-mail-bgColor:  #003580;
+    --mailList-mail-color: white;
+    --mailList-mailInputContainer-button-bgC: #0071c2;
+    --mailList-mailInputContainer-button-color: white;
+
+
+
+
 }
+
 
 
 .white{
@@ -65,6 +82,20 @@
     --header-optionCounter-color: darkblue;
     --header-counterButton-border: "1px solid darkblue";
     --header-counterButton-backgroundColor: white;
+
+
+    --featured-featuredItem-color: white;
+
+    
+    --featuredProperties-button-bgColor: #fabb02;
+    --featuredProperties-button-color: darkblue;
+
+
+    --mailList-mail-bgColor:  #fabb02;
+    --mailList-mail-color: darkblue;
+    --mailList-mailInputContainer-button-bgC: white;
+    --mailList-mailInputContainer-button-color: darkblue;
+
 
 
 }
