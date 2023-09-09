@@ -13,6 +13,7 @@ import Single from "./pages/single/Single";
 
 import "./app.scss"
 import "./theme.scss";
+import Hotel from "./pages/hotel/Hotel";
 
 export const ThemeContext = createContext({
   theme: null,
@@ -33,7 +34,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/hotels" element={<List/> } />
-        <Route path="/hotels/:hotel" element={<Single />} />
+        <Route path="/hotels/:hotel" element={<Hotel/>} />
       </Routes>
     </BrowserRouter>
     </ThemeContext.Provider>
